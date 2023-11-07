@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+   <div>
+   </div>
+    <div class="quiz_container">
+        <h1 style="color: #ffffff;">Ultimate LIBRAS Quiz</h1>
+        <p style="color: aqua;">Pontuação: <span id="pontuacao" style="color: aqua;">0</span></p>
+
+
+        <div class="question" id="question0">
+            <ul class="answers">
+                <button onclick="nextQuestion(1)"> COMEÇAR QUIZ </button>
+            </ul>
+        </div>
+
+
+        <div class="question" id="question1" style="display: none;">
+            <img src="cachorro.jpeg" width="20%" height="5%" alt="Imagem 1">
+            <p>Pergunta 1: Como é chamado este ánimal?</p>
+            <ul class="answers">
+                <li><button onclick="checkAnswer('galo', 1)">galo</button></li>
+                <li><button onclick="checkAnswer('cachorro', 1)">cachorro</button></li>
+                <li><button onclick="checkAnswer('garras', 1)">garras</button></li>
+                <li><button onclick="checkAnswer('macaco', 1)">Macaco</button></li>
+                <li><button onclick="checkAnswer('carro', 1)">carro</button></li>
+                <button onclick="nextQuestion(2)">Próxima Pergunta</button>
+            </ul>
+        </div>
+        <div class="question" id="question2" style="display: none;">
+            <img src="leão.jpeg" width="20%" height="5%" alt="Imagem 2">
+            <p>Pergunta 2: Como é chamada esta imagem?</p>
+            <ul class="answers">
+                <li><button onclick="checkAnswer('panda', 2)">panda</button></li>
+                <li><button onclick="checkAnswer('gato', 2)">gato</button></li>
+                <li><button onclick="checkAnswer('garras', 2)">garras</button></li>
+                <li><button onclick="checkAnswer('leão', 2)">leão</button></li>
+                <li><button onclick="checkAnswer('elefante', 2)">elefante</button></li>
+
+                <button onclick="nextQuestion(3)">Próxima Pergunta</button>
+            </ul>
+        </div>
+        <div class="question" id="question3" style="display: none;">
+            <img src="gaivota.jpeg" width="20%" height="5%" alt="Imagem 3">
+            <p>Pergunta 3: Como é chamada esta imagem?</p>
+            <ul class="answers">
+                <li><button onclick="checkAnswer('Mico-leão-dourado', 3)">Mico-leão-dourado</button></li>
+                <li><button onclick="checkAnswer('gaivota', 3)">gaivota</button></li>
+                <li><button onclick="checkAnswer('papagaio', 3)">papagaio</button></li>
+                <li><button onclick="checkAnswer('acyndaquil', 3)">cyndaquil</button></li>
+                <li><button onclick="checkAnswer('baleia', 3)">baleia</button></li>
+
+                <button onclick="nextQuestion(4)">Próxima Pergunta</button>
+            </ul>
+        </div>
+        <div class="question" id="question4" style="display: none;">
+            <img src="gato.jpeg" width="20%" height="5%" alt="Imagem 4">
+            <p>Pergunta 4: Como é chamado este personagem?</p>
+            <ul class="answers">
+                <li><button onclick="checkAnswer('Coala', 4)">Coala</button></li>
+                <li><button onclick="checkAnswer('golfinho', 4)">golfinho</button></li>
+                <li><button onclick="checkAnswer('gato', 4)">gato</button></li>
+                <li><button onclick="checkAnswer('tigre', 4)">tigre</button></li>
+                <li><button onclick="checkAnswer('peixe', 4)">peixe</button></li>
+
+                <button onclick="nextQuestion(5)">Próxima Pergunta</button>
+            </ul>
+        </div>
+        <div class="question" id="question5" style="display: none;">
+            <img src="garfanhoto.jpeg" width="20%" height="5%" alt="Imagem 5">
+            <p>Pergunta 5: Como é chamado este personagem?</p>
+            <ul class="answers">
+                <li><button onclick="checkAnswer('caranguejo', 5)">caranguejo</button></li>
+                <li><button onclick="checkAnswer('tatu', 5)">tatu</button></li>
+                <li><button onclick="checkAnswer('garfanhoto', 5)">garfanhoto</button></li>
+                <li><button onclick="checkAnswer('golira', 5)">golira</button></li>
+                <li><button onclick="checkAnswer('marlin', 5)">marlin</button></li>
+
+                <button onclick="nextQuestion(6)">Finalizar Quiz</button>
+
+
+            </ul>
+            <div class="question" id="question6" >
+                <p>Você deseja recomeçar o quizz ? </p>
+
+                <ul class="answers">
+                    <button onclick="nextQuestion(7)">Sim</button>
+                    <button onclick="nextQuestion(8)">Não</button>
+                </ul>
+            </div>
+            <div class="finalMessage " id=".questionh1" >
+                <h1>Fim do quizz </h1>
+            </div>
+
+        </div>
+        
+    <script src="style.js"></script>
